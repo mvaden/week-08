@@ -1,4 +1,4 @@
-# Angular Quiz
+# Week 08
 
 ## Instructions
 
