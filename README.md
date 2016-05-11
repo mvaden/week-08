@@ -13,7 +13,9 @@
 Instantiate a new Angular module called `BlogPost` that takes `ui.router` as a dependency. Use Angular code style conventions.
 
 **Your answer:**
-```js
+```function BlogpostIndexControllerFunction({
+  this.blogpost = "This is a blog!"
+  });
 
 ```
 
@@ -41,9 +43,10 @@ One button below has an `ng-click` attribute; the other has `data-ng-click` inst
 ```html
 <button ng-click="create()">Click</button>
 <button data-ng-click="create()">Click</button>
+Adding 'data' to data-ng-app  makes the HTML validate. You may see us forget to use data- occasionally in this class. It doesn't change the functionality at all; it literally just makes the HTML validate
 ```
 
-**Your answer:**
+The ngClick directive allows you to specify custom behavior when an element is clicked.
 
 > ...
 
@@ -51,7 +54,7 @@ One button below has an `ng-click` attribute; the other has `data-ng-click` inst
 
 Which of the following demonstrates the best usage of `ng-app`? **Explain your answer.**
 
-**Your answer:**
+ng-app Is a directive that tells Angular that this element is the root element of the Angular application.
 
 > ...
 
@@ -72,7 +75,7 @@ Which of the following demonstrates the best usage of `ng-app`? **Explain your a
 ### B:
 ```html
 <!DOCTYPE html>
-<html> 
+<html>
   <head data-ng-app="myapp">
     <title>My app</title>
   </head>
@@ -86,7 +89,7 @@ Which of the following demonstrates the best usage of `ng-app`? **Explain your a
 ### C:
 ```html
 <!DOCTYPE html>
-<html> 
+<html>
   <head>
     <title>My app</title>
   </head>
@@ -212,4 +215,3 @@ Of the three following options, which is the most "correct" way of organizing th
   songs/
     form.html
 ```
-
